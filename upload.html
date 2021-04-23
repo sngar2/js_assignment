@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header> 
+        <a href="index.html" class="btn" style="position:fixed; bottom:20px; right:20px;"> 
+            < Go Back
+        </a>         
+        <img src="assets/logo.png">   <br>
+        <h1> Upload Your Video </h1>            
+    </header>
+
+    <div class="container">
+        <form action="https://formspree.io/f/xpzkwnab" method="POST">
+            <label for="email">Title of Video</label>
+            <input id="video-title" name="video-title" type="text" placeholder="Title of video" required>
+            <label for="email">Description of Video</label>
+            <Textarea id="video-description" name="video-description" rows="4" cols="50" required placeholder="Describe the video here."></Textarea>
+            <label for="email">Date to Publish Video</label>
+            <input id="video-publish-date" name="video-publish-date" type="date" required>
+            <label for="email">Video Thumbnail Photo</label>
+            <input id="video-thumbnail-photo" name="video-thumbnail-photo" type="file">
+            <button class="btn btn-secondary">Submit</button>
+        </form>        
+    </div>
+</body>
+</html>
